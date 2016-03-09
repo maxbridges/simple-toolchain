@@ -1,4 +1,4 @@
----
+o---
 stages:
 - name: BUILD
   inputs:
