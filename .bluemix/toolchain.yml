@@ -20,12 +20,12 @@ hello-repo:
   hidden: [form, description]
 
 # Pipelines
-ui-build:
+hello-build:
   service_id: pipeline
   parameters:
-    name: "ui-{{name}}"
-    ui-pipeline: true
-    metadata: ui.pipeline.yml
+    name: "hello-{{name}}"
+    hello-pipeline: true
+    metadata: hello.pipeline.yml
     env:
       GIT_REPO_URL: ${ui-repo.parameters.repo-url}
  
