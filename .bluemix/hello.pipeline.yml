@@ -33,9 +33,8 @@ stages:
       organization: ${DEV_ORG_NAME}
       space: ${DEV_SPACE_NAME}
       application: ${CF_APP_NAME}
-    RAMPDOWN_DURATION: 1m
-    RAMPUP_DURATION: 2m
     COMMAND: |-
+      #!/bin/bash
       cf push "${CF_APP}"
       # View logs
       #cf logs "${CF_APP}" --recent
