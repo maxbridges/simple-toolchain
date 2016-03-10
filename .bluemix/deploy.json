@@ -19,7 +19,7 @@
         },
 
        "hello-app-name": {
-            "description": "ui app name",
+            "description": "hello world app name",
             "type": "string"
         }
     },
