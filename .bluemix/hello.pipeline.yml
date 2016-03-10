@@ -19,7 +19,7 @@ stages:
   triggers:
   - type: stage
   properties:
-  - name: CF_APP_NAME
+  - name: ${CF_APP_NAME}
     value: undefined
     type: text
   - name: APP_URL
@@ -33,7 +33,7 @@ stages:
       organization: ${DEV_ORG_NAME}
       space: ${DEV_SPACE_NAME}
       application: ${CF_APP_NAME}
-    COMMAND: |-
+    script: |
       #!/bin/bash
       cf push "${CF_APP_NAME}"
       # View logs
