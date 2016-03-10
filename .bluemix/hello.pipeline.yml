@@ -35,7 +35,7 @@ stages:
       application: ${CF_APP_NAME}
     COMMAND: |-
       #!/bin/bash
-      cf push "${CF_APP}"
+      cf push "${CF_APP_NAME}"
       # View logs
-      #cf logs "${CF_APP}" --recent
+      #cf logs "${CF_APP_NAME}" --recent
  
