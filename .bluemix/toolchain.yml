@@ -27,7 +27,7 @@ hello-build:
     hello-pipeline: true
     metadata: hello.pipeline.yml
     env:
-      GIT_REPO_URL: ${ui-repo.parameters.repo-url}
+      GIT_REPO_URL: ${hello-repo.parameters.repo-url}
  
       CF_APP_NAME: "{{deploy.parameters.hello-app-name}}"
       DEV_SPACE_NAME: "{{deploy.parameters.dev-space}}"
