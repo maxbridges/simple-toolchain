@@ -18,13 +18,6 @@ stages:
     job: Build
   triggers:
   - type: stage
-  properties:
-  - name: ${CF_APP_NAME}
-    value: undefined
-    type: text
-  - name: APP_URL
-    value: undefined
-    type: text
   jobs:
   - name: Deploy to dev
     type: deployer
