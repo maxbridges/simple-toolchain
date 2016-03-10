@@ -18,6 +18,13 @@ stages:
     job: Build
   triggers:
   - type: stage
+  properties:
+  - name: CF_APP_NAME
+    value: undefined
+    type: text
+  - name: APP_URL
+    value: undefined
+    type: text 
   jobs:
   - name: Deploy to dev
     type: deployer
@@ -28,6 +35,7 @@ stages:
       application: ${CF_APP_NAME}
     script: |
       #!/bin/bash
+      export CF_APP_NAME="$CF_APP"
       cf push "${CF_APP_NAME}"
       # View logs
       #cf logs "${CF_APP_NAME}" --recent
