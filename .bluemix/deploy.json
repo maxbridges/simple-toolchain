@@ -32,7 +32,7 @@
        {
           "type": "text",
           "readonly": false,
-          "title": "Hello world App Name",
+          "title": "Hello World App Name",
           "key": "hello-app-name"
         },
         {
@@ -70,8 +70,8 @@
                 },
                 {
                   "type": "select",
-                  "key": "dev-space",
-                  "readonly": false
+                  "key": "dev-space"
+        
                 }
             ]
         }
