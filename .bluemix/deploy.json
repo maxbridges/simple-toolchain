@@ -62,15 +62,18 @@
                 },
                 {
                   "type": "select",
-                  "key": "dev-region"
+                  "key": "dev-region",
+		   "readonly": false
                 },
                 {
                   "type": "select",
-                  "key": "dev-organization"
+                  "key": "dev-organization",
+		   "readonly": false
                 },
                 {
                   "type": "select",
-                  "key": "dev-space"
+                  "key": "dev-space",
+		   "readonly": false
         
                 }
             ]
