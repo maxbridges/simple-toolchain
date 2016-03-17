@@ -1,7 +1,7 @@
 ---
 name: "Simple toolchain"
 description: "Get started with this sample, which is a Hello World node.js app"
-version: 0.5
+version: 0.2
 image: 
 required:
  - deploy
