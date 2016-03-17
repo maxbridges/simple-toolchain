@@ -1,14 +1,13 @@
 ---
 name: "Simple toolchain"
 description: "Get started with this sample, which is a Hello World node.js app"
-version: 0.2
+version: 0.5
 image: 
 required:
  - deploy
  - github
 
 # Github repos
-
 hello-repo:
   service_id: githubpublic
   parameters:
@@ -32,14 +31,10 @@ hello-build:
       DEV_ORG_NAME: "{{deploy.parameters.dev-organization}}"
       DEV_REGION_ID: "{{deploy.parameters.dev-region}}"
   hidden: [form, description]  
-
-
-
   
 #Web IDE
 webide:
   service_id: orion
-
 
 #Deployment
 deploy:
